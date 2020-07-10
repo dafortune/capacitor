@@ -1,0 +1,27 @@
+{
+  "name": "capacitor",
+  "version": "1.0.0",
+  "description": "Capacitor is a load shedding engine with integrated QoS and fairness. It allows us to continuosly monitor a set of metrics about the capacity of our system and react to them in real time to keep system load controlled by rejecting traffic that would otherwise kill the service.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pidusage": "^2.0.20"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dafortune/capacitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dafortune/capacitor/issues"
+  },
+  "homepage": "https://github.com/dafortune/capacitor#readme"
+}
