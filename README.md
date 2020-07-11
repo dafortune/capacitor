@@ -1,4 +1,4 @@
-# Capacitor (WIP)
+# Capacitor (WIP: WARNING! DO NOT USE)
 Capacitor is a load shedding engine with integrated QoS and fairness. It allows us to continuosly monitor a set of metrics about the capacity of our system and react to them in real time to keep system load controlled by rejecting traffic that would otherwise kill the service.
 
 Capacitor is designed for multitenancy services, keeping fairness as one of the main objetives

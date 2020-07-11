@@ -3,10 +3,14 @@ const app = express();
 const port = 3000;
 const capacitor = require('../lib');
 
-capacitor(app, {
-  cpuThreshold: 50,
-  minCapacity: 10000
+const c = capacitor(app, {
+  // requestRateThreshold: 5,
+  cpuThreshold: 80,
+  minCapacity: 10
 });
+
+c.events.on('load-shedding-triggered', (a, r) => console.log('load shedding', a/r, `${a}/${r}`));
+c.events.on('request-rate', requestRate => console.log(requestRate));
 
 app.get('/', (req, res) => {
   for (let i = 0; i < 100000000; i++) {}
